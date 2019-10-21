@@ -1,0 +1,51 @@
+{
+  "name": "mark-project",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "npm": "6.11.3",
+    "node": "10.16.3"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-leaf-carousel": "^1.2.2",
+    "react-proptypes": "^1.0.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "react-use-gesture": "^5.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prop-types": "^15.5.7",
+    "react-cassette-player": "^0.3.0",
+    "react-motion": "^0.5.2",
+    "react-player": "^1.12.0",
+    "react-spring": "^8.0.27",
+    "reactstrap": "^8.0.1",
+    "video-react": "^0.14.1"
+  }
+}
