@@ -1,11 +1,10 @@
 import React from 'react';
-import { Player, Video } from 'video-react';
+/* import { Player, Video } from 'video-react'; */
 
 
 import Title from '../Title';
 import { NavLink } from 'react-router-dom';
 
-import video1 from '../videos/video1.mp4';
 
 const VideoPlayer = ({video}) => {
   return (

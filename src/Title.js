@@ -6,7 +6,7 @@ export default function Title ({title}) {
   }
   return (
     <div className="title">
-      <h3 id="content_title" style={style}></h3>
+      <h3 id="content_title" style={style}> </h3>
       <div className="title">{title}</div>
     </div>
   )

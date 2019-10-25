@@ -22,9 +22,9 @@ const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`
 const trans2 = (x, y) => `translate3d(${x / 15 + 15}px,${y / 15 - 0}px,0)`
 const trans3 = (x, y) => `translate3d(${x / 20 - 10}px,${y / 20 - 0}px,0)`;
 
-const props = {
+/* const props = {
   draggable: true
-}
+} */
 
 
 export default function Feed() {

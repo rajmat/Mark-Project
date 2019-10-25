@@ -1,4 +1,3 @@
-import { render } from 'react-dom'
 import React, { useState, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
 
@@ -16,11 +15,11 @@ import { NavLink } from 'react-router-dom';
 
 
 const pages = [
-  ({ style }) => <animated.div style={{ ...style, maxHeight: "auto" }}><img src={a} /></animated.div>,
-  ({ style }) => <animated.div style={{ ...style }}><img src={b} style={{width: "100vw", height: "100vh"}}/></animated.div>,
-  ({ style }) => <animated.div style={{ ...style }}><img src={c} style={{width: "100vw", height: "100vh"}}/></animated.div>,
-  ({ style }) => <animated.div style={{ ...style }}><img src={ric} style={{width: "100vw", height: "100vh"}}/></animated.div>,
-  ({ style }) => <animated.div style={{ ...style }}><img src={kep1} style={{width: "100vw", height: "100vh"}}/></animated.div>,
+  ({ style }) => <animated.div style={{ ...style, maxHeight: "auto" }}><img alt={a} src={a} /></animated.div>,
+  ({ style }) => <animated.div style={{ ...style }}><img alt={b} src={b} style={{width: "100vw", height: "100vh"}}/></animated.div>,
+  ({ style }) => <animated.div style={{ ...style }}><img alt={c} src={c} style={{width: "100vw", height: "100vh"}}/></animated.div>,
+  ({ style }) => <animated.div style={{ ...style }}><img alt={ric} src={ric} style={{width: "100vw", height: "100vh"}}/></animated.div>,
+  ({ style }) => <animated.div style={{ ...style }}><img alt={kep1} src={kep1} style={{width: "100vw", height: "100vh"}}/></animated.div>,
 ]
 
 export default function AsapRocky3() {

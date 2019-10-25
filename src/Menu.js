@@ -51,23 +51,3 @@ export default function Menu() {
     </div>
   );
 };
-
-
-{/* <div className="menu" >
-            <div className=" menu header">
-              <h1 onClick={onToggle}>Puszta Márk</h1>
-              <h2>polgármester</h2>
-            </div> 
-
-            <div className="my-collapsible__content" ref={setCollapsibleElement}>
-              <div className="my-collapsible__content-inner menu body">
-                <h3>1. lecke</h3>
-                <h3>2. lecke</h3>
-                <h3>3. lecke</h3>
-                <h3>4. lecke</h3>
-                <h3>5. lecke</h3>
-                <h3>6. lecke</h3>
-                <h3>7. lecke</h3>
-              </div>
-            </div>
-          </div> */}
