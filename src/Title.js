@@ -7,7 +7,7 @@ export default function Title ({title}) {
   return (
     <div className="title">
       <h3 id="content_title" style={style}></h3>
-      <h2>{title}</h2>
+      <div className="title">{title}</div>
     </div>
   )
 };

@@ -90,10 +90,10 @@ h1,h2,h3 {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
   #pm {
     display: block;
-    font-size: 1.17em;
+    font-size: 48px;
     margin-top: 1em;
     margin-left: 0;
     margin-right: 0;
@@ -115,6 +115,30 @@ h1,h2,h3 {
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
+  }
+  h3 {
+    font-size: 22px !important;
+  }
+  .envelope, .mobile, .pin {
+    opacity: 1;
+    user-select: text;
+    display: block;
+  }
+  ._2VaQi-Tq1LrSSO0_knReFa {
+    position: relative;
+    float: none;
+    display: inline-block;
+    width: 85% !important;
+    height: auto;
+    margin: 0px 10px;
+  }
+  video {
+    width: 100%;
+    height: 92%;
+  }
+  
+  video:focus {
+    outline: none;
   }
 }
 
@@ -149,9 +173,6 @@ h2:active, h3:hover, h3:active, #pm:hover {
 }
 
 @media only screen and (max-width: 900px) {
-  .wrapper {
-    padding-left: 5%;
-  } 
   #feed.feed {
     padding: 0px;
     padding-top: 50%;
@@ -160,6 +181,25 @@ h2:active, h3:hover, h3:active, #pm:hover {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(10, 10vw);
     grid-gap: 15px;
+  }
+  .title {
+    font-size: 20px;
+    display: block;
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+  video {
+    width: 100%;
+    height: 92%;
+  }
+  
+  video:focus {
+    outline: none;
+  }
+  .contact {
+    font-size: 20px;
   }
 }
 
