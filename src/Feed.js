@@ -68,12 +68,12 @@ export default function Feed() {
           </NavLink>
         </animated.div>
        {/*  <Draggable */}
-          onMouseDown={() => { setDragged(dragged = false); console.log(dragged) }}
+        {/*   onMouseDown={() => { setDragged(dragged = false); console.log(dragged) }}
           onDrag={() => { setDragged(dragged = true); console.log(dragged) }}
           onMouseUp={(event) => {
             event.preventDefault();
             setDragged(dragged = false);
-          }} >
+          }} > */}
           <animated.div className="image3" style={{ transform: props.xy.interpolate(trans3) }}>
             <NavLink to="A$apRocky-3">
               <img src={c} alt="A$ap Rocky - 3" onClick={(event) => { event.stopPropagation(); if (dragged === false) { console.log('fasz') } }} />
