@@ -1,6 +1,4 @@
 import React from 'react';
-import audio1 from '../audio/audio1.mp3';
-
 
 class Cassette extends React.Component {
 
@@ -28,7 +26,7 @@ class Cassette extends React.Component {
     playerElement.addEventListener('pause', this.audioPause);
   };
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (this.props.src !== nextProps.src) {
       this.audioPause();
     }
@@ -107,15 +105,15 @@ class Cassette extends React.Component {
 
 
   render() {
-    let scaleMethod = "xMidYMid " + this.props.scaleMethod;
+    /* let scaleMethod = "xMidYMid " + this.props.scaleMethod; */
     let ls = "M40.849,49.944 h" + this.state.lt + " c0.243-1.207,0.367-2.438,0.367-3.669 c0-1.339-0.146-2.676-0.435-3.984 h-" + (this.state.lt - 0.06) + " V49.944 z";
     let rightSpool;
     let playControls;
     if (this.state.rt >= 0.07) {
       let rs = "M40.849,49.944 h" + this.state.rt + " c0.243-1.207,0.367-2.438,0.367-3.669 c0-1.339-0.146-2.676-0.435-3.984 h-" + (this.state.rt - 0.06) + " V49.944 z";
-      rightSpool = <path fill={"white"} d={rs} transform={'translate(100, 0) scale(-1, 1)'} />
+      rightSpool = <path fill={"blue"} d={rs} transform={'translate(100, 0) scale(-1, 1)'} />
     } else {
-      rightSpool = null;
+      rightSpool = '';
     }
     if (this.state.playing) {
       playControls = <g transform={'scale(0.14) translate(285,465)'} >
@@ -134,7 +132,7 @@ class Cassette extends React.Component {
       <audio ref={'player'} preload={this.props.preload} >
         <source src={this.props.audio} type={this.props.mimeType} />
       </audio>
-      <g>
+      <div>
         <svg onClick={this.togglePlayPause} x={'0px'} y={'0px'} width={'100vw'} height={'100vh'} viewBox={'0 0 100 100'}>
           <g>
             <polygon fill={"yellow"} points={'23.034,66.621 20.613,78.02 79.387,78.02 76.965,66.621'}>
@@ -144,10 +142,11 @@ class Cassette extends React.Component {
             <path fill={"green"} d={'M91.399,21.98H8.6c-1.988,0-3.6,1.612-3.6,3.6v48.84c0,1.988,1.612,3.6,3.6,3.6h9.805l2.88-13.561h57.43    l2.88,13.561h9.805c1.988,0,3.601-1.611,3.601-3.6V25.58C95,23.592,93.388,21.98,91.399,21.98z M90.328,58.062    c0,2.262-1.841,4.102-4.104,4.102h-72.45c-2.263,0-4.104-1.84-4.104-4.102V28.874c0-2.262,1.841-4.103,4.104-4.103h72.45    c2.263,0,4.104,1.841,4.104,4.103V58.062z'} />
           </g>
           <g>
-            <path fill={"blue"} d={ls} rightspool />
+            <path fill={"blue"} d={ls} />
+            {rightSpool}
           </g>
         </svg>
-      </g>
+      </div>
     </div >
   }
 };
