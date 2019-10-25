@@ -83,7 +83,7 @@ export default function Feed() {
         <animated.div className="image4" style={{ transform: props.xy.interpolate(trans2) }}>
           {/*   <Draggable> */}
           <NavLink to="A$apRocky-4">
-            <video id="A$ap Rocky - 4" autoPlay={true} loop muted type="video/mp4">
+            <video id="A$ap Rocky - 4" autoPlay={false} loop muted type="video/mp4">
               <source src={video} />
             </video>
           </NavLink>
